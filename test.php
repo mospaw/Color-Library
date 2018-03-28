@@ -39,7 +39,7 @@ box($new_color);
 $color = "#FF8000";
 
 box($color);
-$unpack = _color_unpack($color,true);
+$unpack = _color_unpack($color, true);
 
 $hsl = _color_rgb2hsl($unpack);
 //var_dump($hsl);
@@ -48,11 +48,11 @@ $hsl[1] -= .3333;
 
 $new_rgb = _color_hsl2rgb($hsl);
 
-$new_color = _color_pack($new_rgb,true);
+$new_color = _color_pack($new_rgb, true);
 
 box($new_color);
 
-$unpack = _color_unpack($new_color,true);
+$unpack = _color_unpack($new_color, true);
 
 $hsl = _color_rgb2hsl($unpack);
 //var_dump($hsl);
@@ -61,13 +61,13 @@ $hsl[1] -= .33333;
 
 $new_rgb = _color_hsl2rgb($hsl);
 
-$new_color = _color_pack($new_rgb,true);
+$new_color = _color_pack($new_rgb, true);
 
 box($new_color);
 
 
 
-$unpack = _color_unpack($new_color,true);
+$unpack = _color_unpack($new_color, true);
 
 $hsl = _color_rgb2hsl($unpack);
 //var_dump($hsl);
@@ -76,12 +76,12 @@ $hsl[1] -= .33333;
 
 $new_rgb = _color_hsl2rgb($hsl);
 
-$new_color = _color_pack($new_rgb,true);
+$new_color = _color_pack($new_rgb, true);
 
 
 box($new_color);
 
-$unpack = _color_unpack($new_color,true);
+$unpack = _color_unpack($new_color, true);
 
 $hsl = _color_rgb2hsl($unpack);
 //var_dump($hsl);
@@ -90,11 +90,11 @@ $hsl[1] -= .33333;
 
 $new_rgb = _color_hsl2rgb($hsl);
 
-$new_color = _color_pack($new_rgb,true);
+$new_color = _color_pack($new_rgb, true);
 
 box($new_color);
 
-$unpack = _color_unpack($new_color,true);
+$unpack = _color_unpack($new_color, true);
 
 $hsl = _color_rgb2hsl($unpack);
 //var_dump($hsl);
@@ -103,7 +103,7 @@ $hsl[1] += .33333;
 
 $new_rgb = _color_hsl2rgb($hsl);
 
-$new_color = _color_pack($new_rgb,true);
+$new_color = _color_pack($new_rgb, true);
 
 box($new_color);
 
@@ -114,7 +114,7 @@ print_r($testrgb);
   print "Hex: ";
   $testhex = "#C5003E";
   print $testhex;
-  $testhex2rgb = _color_unpack($testhex,true); 
+  $testhex2rgb = _color_unpack($testhex, true);
   print "<br />RGB: ";
   var_dump($testhex2rgb);
   print "<br />HSL color module: ";
@@ -124,5 +124,5 @@ print_r($testrgb);
   $testhsl2rgb = _color_hsl2rgb($testrgb2hsl); // En weer terug naar RGB
   var_dump($testhsl2rgb);
   print "<br />Hex: ";
-  $testrgb2hex = _color_pack($testhsl2rgb,true);
+  $testrgb2hex = _color_pack($testhsl2rgb, true);
   var_dump($testrgb2hex);
